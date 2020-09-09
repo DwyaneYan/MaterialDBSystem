@@ -1,0 +1,11 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/.vs/Abp/v16/.suo
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/.vs
+/aspnet-core/src/HanGang.MaterialSystem.HttpApi.Host/uploads
+*.k
+logs.txt

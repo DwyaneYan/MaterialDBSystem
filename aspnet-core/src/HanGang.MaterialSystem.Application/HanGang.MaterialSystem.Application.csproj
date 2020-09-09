@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>HanGang.MaterialSystem</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>HanGang.MaterialSystem.Application.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HanGang.MaterialSystem.Domain\HanGang.MaterialSystem.Domain.csproj" />
+    <ProjectReference Include="..\HanGang.MaterialSystem.Application.Contracts\HanGang.MaterialSystem.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FreeSpire.XLS" Version="10.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="OfficeOpenXml.Core.ExcelPackage" Version="1.0.0" />
+    <PackageReference Include="Spire.XLS" Version="10.1.1" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="HanGang.MaterialSystem.Application.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

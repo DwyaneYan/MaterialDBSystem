@@ -1,0 +1,1699 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HanGang.MaterialSystem.Application</name>
+    </assembly>
+    <members>
+        <member name="T:HanGang.MaterialSystem.DemoManagement.DemoProjectAppService">
+            <summary>
+            演示代码
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.DemoManagement.DemoProjectAppService.AddProject(HanGang.MaterialSystem.DemoManagement.Dtos.AddProjectInputDto)">
+            <summary>
+            添加项目
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.DemoManagement.DemoProjectAppService.GetProjects(HanGang.MaterialSystem.DemoManagement.Dtos.GetMyProjectsInputDto)">
+            <summary>
+            获取项目
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.DemoManagement.DemoProjectAppService.UpdateProject(HanGang.MaterialSystem.DemoManagement.Dtos.UpdateProjectInputDto)">
+            <summary>
+            更新项目
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.DemoManagement.DemoProjectAppService.GetProject(System.Guid)">
+            <summary>
+            获取项目详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.Manufactories.ManufactoryAppService">
+            <summary>
+            生产厂家服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Manufactories.ManufactoryAppService.GetManufactories(HanGang.MaterialSystem.Manufactories.Dtos.GetManufactoryListInputDto)">
+            <summary>
+            获取所有生产厂家
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Manufactories.ManufactoryAppService.GetManufactoryById(System.Guid)">
+            <summary>
+            根据生产厂家Id获取某个厂家信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Manufactories.ManufactoryAppService.AddManufactory(HanGang.MaterialSystem.Manufactories.Dtos.AddManufactoryInputDto)">
+            <summary>
+            添加生产厂家
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Manufactories.ManufactoryAppService.UpdateManufactory(HanGang.MaterialSystem.Manufactories.Dtos.ManufactoryDto)">
+            <summary>
+            更新某个厂家信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Manufactories.ManufactoryAppService.Delete(System.Guid)">
+            <summary>
+            根据生产厂家Id删除某个厂家信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.Trials.MaterialsImportAppService">
+            <summary>
+            材料服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialsImportAppService.AddMaterial(System.String)">
+            <summary>
+            添加材料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>between types 'System.String' and 'System.Nullable`1[System.Guid]'.”
+        </member>
+        <member name="T:HanGang.MaterialSystem.Trials.MaterialAppService">
+            <summary>
+            材料服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.VIMtoHangangOperation(HanGang.MaterialSystem.TypicalParts.Dtos.VIMtoHangangDto)">
+            <summary>
+            vim平台跳到邯钢典型零件页面所需判断
+            </summary>
+            <param name="carTypeAndPart"></param>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.HanGangToVIMOperation(System.Guid)">
+            <summary>
+            邯钢典型零件页面跳到vim平台所需判断
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.GetAllTypicalPart">
+            <summary>
+            获取所有典型零件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.UpdatePartsMaterialId(HanGang.MaterialSystem.TypicalParts.Dtos.BindPartAndMaterialDto)">
+            <summary>
+            绑定材料和零件
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.GetAllDataExample(System.Guid)">
+            <summary>
+            数据过滤演示
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.GetMaterials(HanGang.MaterialSystem.Materials.Dtos.GetMaterialListInputDto)">
+            <summary>
+            获取所有材料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AddMaterial(HanGang.MaterialSystem.Materials.Dtos.MaterialDto)">
+            <summary>
+            添加材料
+            </summary>
+            <param name="input"></param>
+            <returns></returns>between types 'System.String' and 'System.Nullable`1[System.Guid]'.”
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.UpdateTrial(HanGang.MaterialSystem.Materials.Dtos.MaterialDto,System.Guid)">
+            <summary>
+            更新某个材料信息
+            </summary>
+            <param name="input"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.Delete(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            根据材料Id删除某个材料信息和关联的材料试验信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.GetMaterialRecommendations">
+            <summary>
+            获取所有材料推荐
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AddMaterialRecommendations(System.Nullable{System.Guid})">
+            <summary>
+            根据材料id添加材料推荐表
+            </summary>
+            <param name="id"></param>        
+            <returns></returns>between types 'System.String' and 'System.Nullable`1[System.Guid]'.”
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.DeleteMaterialRecommendations(System.Guid)">
+            <summary>
+            删除材料推荐表数据
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddTestItem(Microsoft.AspNetCore.Http.IFormFileCollection)">
+            <summary>
+            试验项目上传入口
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.RemoveEmpty(System.Data.DataTable)">
+            <summary>
+            去除DataTable中空行
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.UploadPicture(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            图片导入公共部分
+            </summary>
+            <param name="picture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.UploadDocument(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            文档导入公共部分
+            </summary>
+            <param name="document"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddCommon(System.Data.DataTable,HanGang.MaterialSystem.Entities.Material,HanGang.MaterialSystem.Entities.MaterialTrial)">
+            <summary>
+            模板公用导入部分,是否存在该试验项目
+            </summary>
+            <param name="dt"></param>
+            <param name="material"></param>
+            <param name="materialTrial"></param>       
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.TransToDecimal(System.String)">
+            <summary>
+            将科学计数或者小数型字符串转换为decimal
+            </summary>
+            <param name="dec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.TransToDate(System.String)">
+            <summary>
+            日期格式转换
+            </summary>
+            <param name="dec"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddStaticTension2(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入静态拉伸邯钢
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddLowCycleFatigue(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入低周疲劳
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddPhysicalPerformance(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入物理性能
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddRebound(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入回弹
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddHighCycleFatigue(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入高周疲劳
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddWelding(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入焊接
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddHydrogenInducedDelayedFracture(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入氢致延迟断裂
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddHighSpeedStrech(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入高速拉伸邯钢
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddProhibitedSubstance(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入禁用物质
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddChemicalElement(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入化学成分
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddSurfaceProperty(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入表面性能
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddSurfaceProperty2(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入表面性能邯钢
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddBakeHardening(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入烘烤硬化
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddBending(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入弯曲
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddCompress(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入压缩
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddFlangingClasp(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入翻边
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddFLD(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入FLD试验
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddSecondaryWorkingEmbrittlement(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入二次加工脆化
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddCementing(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入胶结试验
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddMetallographic(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入金相
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddDentResistance(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入抗凹
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.AutoAddPainting(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String)">
+            <summary>
+            材料文件自动导入涂装性能
+            </summary>
+            <param name="input"></param>
+            <param name="pictureName"></param>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.MaterialAppService.ApplicationCaseExport(System.Guid)">
+            <summary>
+            材料的应用案例自动导出
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.Trials.MaterialTrialDataAppService">
+            <summary>
+            材料实验数据服务
+            </summary>
+        </member>
+        <member name="T:HanGang.MaterialSystem.Trials.TrialAppService">
+            <summary>
+            生产厂家服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.TrialAppService.GetTrials(HanGang.MaterialSystem.Trials.Dtos.GetTrialListInputDto)">
+            <summary>
+            获取所有试验
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.TrialAppService.GetTrialById(System.Guid)">
+            <summary>
+            根据试验Id获取某个试验信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.TrialAppService.AddTrial(HanGang.MaterialSystem.Trials.Dtos.AddTrialDto)">
+            <summary>
+            添加试验
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.TrialAppService.UpdateTrial(HanGang.MaterialSystem.Trials.Dtos.TrialDto)">
+            <summary>
+            更新某个试验信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Trials.TrialAppService.Delete(System.Guid)">
+            <summary>
+            根据生产厂家Id删除某个厂家信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService">
+            <summary>
+            材料试验及获取试验数据服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetApplicationCaseByMaterialId(System.Guid)">
+            <summary>
+            根据材料id获取对应所有应用案例
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetApplicationCaseByInput(HanGang.MaterialSystem.ApplicationCases.Dtos.ApplicationCaseDto)">
+            <summary>
+            根据材料id和车型获取对应所有应用案例
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.AddApplicationCase(HanGang.MaterialSystem.ApplicationCases.Dtos.ApplicationCaseDto)">
+            <summary>
+            添加应用案例
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.UpdateApplicationCase(HanGang.MaterialSystem.ApplicationCases.Dtos.ApplicationCaseDto)">
+            <summary>
+            更新某个应用案例
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.DeleteApplicationCase(System.Guid)">
+            <summary>
+            根据应用案例Id删除某个应用案例
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetApplicationCaseById(System.Guid)">
+            <summary>
+            根据应用案例Id获取某个应用案例
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetTrialItemByMaterialId(System.Guid)">
+            <summary>
+            根据材料id获取对应实验项目
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetMaterialTrials(HanGang.MaterialSystem.MaterialTrials.Dtos.GetMaterialTrialListInputDto)">
+            <summary>
+            获取所有材料试验
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetMaterialTrialById(System.Guid)">
+            <summary>
+            根据材料试验Id获取某个材料试验信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.AddMaterialTrial(HanGang.MaterialSystem.MaterialTrials.Dtos.AddMaterialTrialInputDto)">
+            <summary>
+            添加材料试验
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.UpdateMaterialTrial(HanGang.MaterialSystem.MaterialTrials.Dtos.MaterialTrialDto)">
+            <summary>
+            更新某个材料试验信息
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.Delete(System.Guid)">
+            <summary>
+            根据材料试验Id删除某个材料试验信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetAllDataExample(System.Guid)">
+            <summary>
+            数据过滤演示 同步方法演示
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetStaticTensionDataDetails(System.Guid)">
+            <summary>
+            获取静态拉伸数据明细
+            </summary>
+            <param name="materialId"></param>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetStaticTensionDataDetails2(System.Guid)">
+            <summary>
+            获取静态拉伸数据明细用于对比页面
+            </summary>
+            <param name="materialId"></param>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetStaticTensionDataDetailRequirements(System.Guid)">
+            <summary>
+            获取静态拉伸数据明细Requirement
+            </summary>
+            <param name="materialId"></param>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetStaticTensionDataDetailStressStrains(System.Guid)">
+            <summary>
+            获取静态拉伸应力应变
+            </summary>
+            <param name="materialId"></param>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetCommonCardData(System.Guid)">
+            <summary>
+            获取材料卡片公用信息
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetMaterialCardStaticTensionInfo(System.Guid)">
+            <summary>
+            导出Type24材料卡片（静态拉伸）
+            </summary>
+            <param name="materialId"></param>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetType12CardInfo(System.Guid)">
+            <summary>
+            获取Type12材料卡片
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetType15CardInfo(HanGang.MaterialSystem.MaterialTrials.Dtos.GetType15CardDto)">
+            <summary>
+            获取Type15材料卡片
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetType39CardInfo(HanGang.MaterialSystem.MaterialTrials.Dtos.GetType39CardDto)">
+            <summary>
+            获取Type39材料卡片
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetType81CardInfo(System.Guid)">
+            <summary>
+            获取Type81材料卡片
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetType100CardInfo(System.Guid)">
+            <summary>
+            获取Type100材料卡片
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetBendingDataDetails(System.Guid)">
+            <summary>
+            获取弯曲数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetCompressDataDetails(System.Guid)">
+            <summary>
+            获取压缩数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetHighSpeedStrechDataDetails(System.Guid)">
+            <summary>
+            获取高速拉伸数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetMaterialCardInfo(System.Guid)">
+            <summary>
+            导出高速拉伸材料卡片
+            </summary>
+            <param name="materialId"></param>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetHighSpeedStrechDataDetailStressStrains(System.Guid)">
+            <summary>
+            获取高速拉伸应力应变数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetHighSpeedStrechDataDetailStressStrainExtends(System.Guid)">
+            <summary>
+            获取高速拉伸应力应变数据Extend
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetLowCycleFatigueDataDetails(System.Guid)">
+            <summary>
+            获取低周疲劳数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetLowCycleFatigueDataDetailItems(System.Guid)">
+            <summary>
+            获取低周疲劳项目数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetHighCycleFatigueDataDetails(System.Guid)">
+            <summary>
+            获取高周疲劳数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetHighCycleFatigueDataDetailItems(System.Guid)">
+            <summary>
+            获取高周疲劳项目数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetMetallographicDataDetails(System.Guid)">
+            <summary>
+            获取金相数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPhysicalPerformanceDataDetails(System.Guid)">
+            <summary>
+            获取物理性能数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPhysicalPerformanceDataDetailThermalConductivitys(System.Guid)">
+            <summary>
+            获取物理性能导热系数数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPhysicalPerformanceDataDetailThermalExpansions(System.Guid)">
+            <summary>
+            获取物理性能热膨胀系数
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetChemicalElementDataDetails(System.Guid)">
+            <summary>
+            获取化学成分数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetProhibitedSubstanceDataDetails(System.Guid)">
+            <summary>
+            获取禁用物质数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetSurfacePropertyDataDetails(System.Guid)">
+            <summary>
+            获取表面性能试验数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetSurfacePropertyCoatingWeights(System.Guid)">
+            <summary>
+            获取表面性能镀层重量
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetSurfacePropertyRoughnesss(System.Guid)">
+            <summary>
+            获取表面性能粗造度
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetSurfacePropertyRoughnessAndPeakDensity(System.Guid)">
+            <summary>
+            获取表面性能粗造度和峰值密度
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetSurfacePropertySizeTolerance(System.Guid)">
+            <summary>
+            获取表面性能尺寸公差
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetDentResistanceDataDetails(System.Guid)">
+            <summary>
+            寻找抗凹性能数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetBakeHardeningDataDetails(System.Guid)">
+            <summary>
+            寻找烘烤硬化数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetBakeHardeningDataDetailItems(System.Guid)">
+            <summary>
+            寻找烘烤硬化项目数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetReboundDataDetails(System.Guid)">
+            <summary>
+            寻找回弹性能数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetReboundDataDetailItems(System.Guid)">
+            <summary>
+            寻找回弹性能项目1数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetReboundDataDetailItems2(System.Guid)">
+            <summary>
+            寻找回弹性能项目2数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetReboundDataDetailItems3(System.Guid)">
+            <summary>
+            寻找回弹性能项目3数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetFLDDataDetails(System.Guid)">
+            <summary>
+            寻找成形极限数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetFLDDataDetailItems(System.Guid)">
+            <summary>
+            寻找成形极限项目数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetails(System.Guid)">
+            <summary>
+            寻找涂装性能数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetailAdhesionItems(System.Guid)">
+            <summary>
+            寻找涂装性能附着力数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetailDampHeatItems(System.Guid)">
+            <summary>
+            寻找涂装性能-耐湿热性能试验数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetailElectrophoreticItems(System.Guid)">
+            <summary>
+            寻找涂装性能-电泳漆膜厚度试验数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetailHardnessItems(System.Guid)">
+            <summary>
+            寻找涂装性能-电泳漆膜硬度试验数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetailHitResistanceItems(System.Guid)">
+            <summary>
+            寻找涂装性能-抗石击性能试验数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetailMembraneWeightItems(System.Guid)">
+            <summary>
+            寻找涂装性能-膜重试验数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetailPhosphatingItems(System.Guid)">
+            <summary>
+            寻找涂装性能-磷化膜试验数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetailPRatioItems(System.Guid)">
+            <summary>
+            寻找涂装性能-P比试验数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetPaintingDataDetailRoughnessItems(System.Guid)">
+            <summary>
+            寻找涂装性能-电泳漆膜粗糙度试验数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetCementingDataDetails(System.Guid)">
+            <summary>
+            寻找胶接性能数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetWeldingDataDetails(System.Guid)">
+            <summary>
+            寻找焊接性能数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetWeldingDataDetailItems(System.Guid)">
+            <summary>
+            寻找焊接性能项目数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetHydrogenInducedDelayedFractureDataDetails(System.Guid)">
+            <summary>
+            寻找氢致延迟开裂数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetHydrogenInducedDelayedFractureDataDetailItems(System.Guid)">
+            <summary>
+            寻找氢致延迟开裂数据项目
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetFlangingClaspDataDetails(System.Guid)">
+            <summary>
+            寻找翻边扣合数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetSecondaryWorkingEmbrittlementDataDetails(System.Guid)">
+            <summary>
+            寻找二次加工数据明细
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.MaterialTrialAppService.GetSecondaryWorkingEmbrittlementDataDetailItems(System.Guid)">
+            <summary>
+            寻找二次加工项目数据
+            </summary>
+            <param name="materialId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.MaterialTrials.type24_staticTension">
+            <summary>
+            静态拉伸k文件卡片
+            </summary>
+        </member>
+        <member name="F:HanGang.MaterialSystem.MaterialTrials.type24_staticTension.Title">
+            <summary>
+            头部内容
+            </summary>
+        </member>
+        <member name="F:HanGang.MaterialSystem.MaterialTrials.type24_staticTension.MaterialName">
+            <summary>
+            材料名称
+            </summary>
+        </member>
+        <member name="F:HanGang.MaterialSystem.MaterialTrials.type24_staticTension.Note">
+            <summary>
+            中间内容
+            </summary>
+        </member>
+        <member name="F:HanGang.MaterialSystem.MaterialTrials.type24_staticTension.Content1">
+            <summary>
+            第18、19行的内容
+            </summary>
+        </member>
+        <member name="F:HanGang.MaterialSystem.MaterialTrials.type24_staticTension.ssCode">
+            <summary>
+            应力应变数据对编号
+            </summary>
+        </member>
+        <member name="F:HanGang.MaterialSystem.MaterialTrials.type24_staticTension.ssData">
+            <summary>
+            应力应变数据对
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MaterialTrials.type24_staticTension.GetStandardData(System.String)">
+            <summary>
+            将数据转化成10位右对齐数据
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.Rbac.RbacAppService">
+            <summary>
+            生产厂家服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.GetRoles(HanGang.MaterialSystem.Rbac.Dtos.RoleDto)">
+            <summary>
+            获取Role
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.AddRole(HanGang.MaterialSystem.Rbac.Dtos.RoleDto)">
+            <summary>
+            添加Role
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.UpdateRole(HanGang.MaterialSystem.Rbac.Dtos.RoleDto)">
+            <summary>
+            更新某个Role信息
+            </summary>
+            <param name="input"></param>         
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.DeleteRole(System.Guid)">
+            <summary>
+            根据Id删除某个Role
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.GetRoleResources(HanGang.MaterialSystem.Rbac.Dtos.RoleResourceDto)">
+            <summary>
+            获取RoleResources
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.AddRoleResource(HanGang.MaterialSystem.Rbac.Dtos.RoleResourceDto)">
+            <summary>
+            添加RoleResource
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.UpdateRoleResource(HanGang.MaterialSystem.Rbac.Dtos.RoleResourceDto)">
+            <summary>
+            更新某个RoleResource信息
+            </summary>
+            <param name="input"></param>         
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.DeleteRoleResource(System.Guid)">
+            <summary>
+            根据Id删除某个RoleResource
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.GetTrialCategorys(HanGang.MaterialSystem.Rbac.Dtos.TrialCategoryDto)">
+            <summary>
+            获取TrialCategory
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.AddTrialCategory(HanGang.MaterialSystem.Rbac.Dtos.TrialCategoryDto)">
+            <summary>
+            添加TrialCategory
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.UpdateTrialCategory(HanGang.MaterialSystem.Rbac.Dtos.TrialCategoryDto)">
+            <summary>
+            更新某个TrialCategory信息
+            </summary>
+            <param name="input"></param>         
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.DeleteTrialCategory(System.Guid)">
+            <summary>
+            根据Id删除某个TrialCategory
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.GetTrialDetailGroups(HanGang.MaterialSystem.Rbac.Dtos.TrialDetailGroupDto)">
+            <summary>
+            获取TrialDetailGroup
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.AddTrialDetailGroup(HanGang.MaterialSystem.Rbac.Dtos.TrialDetailGroupDto)">
+            <summary>
+            添加TrialDetailGroup
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.UpdateTrialDetailGroup(HanGang.MaterialSystem.Rbac.Dtos.TrialDetailGroupDto)">
+            <summary>
+            更新某个TrialDetailGroup信息
+            </summary>
+            <param name="input"></param>         
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.DeleteTrialDetailGroup(System.Guid)">
+            <summary>
+            根据Id删除某个TrialDetailGroup
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.GetTrialDetailShowTypes(HanGang.MaterialSystem.Rbac.Dtos.TrialDetailShowTypeDto)">
+            <summary>
+            获取TrialDetailGroup
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.AddTrialDetailShowType(HanGang.MaterialSystem.Rbac.Dtos.TrialDetailShowTypeDto)">
+            <summary>
+            添加TrialDetailShowType
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.UpdateTrialDetailShowType(HanGang.MaterialSystem.Rbac.Dtos.TrialDetailShowTypeDto)">
+            <summary>
+            更新某个TrialDetailShowType信息
+            </summary>
+            <param name="input"></param>         
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.DeleteTrialDetailShowType(System.Guid)">
+            <summary>
+            根据Id删除某个TrialDetailShowType
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.GetUsers(HanGang.MaterialSystem.Rbac.Dtos.UserDto)">
+            <summary>
+            获取User
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.AddUser(HanGang.MaterialSystem.Rbac.Dtos.UserDto)">
+            <summary>
+            添加User
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.UpdateUser(HanGang.MaterialSystem.Rbac.Dtos.UserDto)">
+            <summary>
+            更新某个User信息
+            </summary>
+            <param name="input"></param>         
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.DeleteUser(System.Guid)">
+            <summary>
+            根据Id删除某个User
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.GetUserRoles(HanGang.MaterialSystem.Rbac.Dtos.UserRoleDto)">
+            <summary>
+            获取UserRole
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.AddUserRole(HanGang.MaterialSystem.Rbac.Dtos.UserRoleDto)">
+            <summary>
+            添加UserRole
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.UpdateUserRole(HanGang.MaterialSystem.Rbac.Dtos.UserRoleDto)">
+            <summary>
+            更新某个UserRole信息
+            </summary>
+            <param name="input"></param>         
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Rbac.RbacAppService.DeleteUserRole(System.Guid)">
+            <summary>
+            根据Id删除某个UserRole
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.BakeHardeningDataDetails.BakeHardeningDataDetailAppService">
+            <summary>
+            烘烤硬化服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.BakeHardeningDataDetails.BakeHardeningDataDetailAppService.AddbakeHardeningDataDetail(HanGang.MaterialSystem.BakeHardeningDataDetails.Dtos.BakeHardeningDataDetailDto)">
+            <summary>
+            添加烘烤硬化数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.BakeHardeningDataDetails.BakeHardeningDataDetailAppService.AddBakeHardeningDataDetailItem(HanGang.MaterialSystem.BakeHardeningDataDetails.Dtos.BakeHardeningDataDetailItemDto)">
+            <summary>
+            添加烘烤硬化项目数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.CementingDataDetails.CementingDataDetailAppService">
+            <summary>
+            胶接性能服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.CementingDataDetails.CementingDataDetailAppService.AddCementingDataDetail(HanGang.MaterialSystem.CementingDataDetails.Dtos.CementingDataDetailDto)">
+            <summary>
+            添加胶接性能数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.DentResistanceDataDetails.DentResistanceDataDetailAppService">
+            <summary>
+            抗凹性能服务DentResistanceDataDetailLimitStrain
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.DentResistanceDataDetails.DentResistanceDataDetailAppService.AddDentResistanceDataDetail(HanGang.MaterialSystem.DentResistanceDataDetails.Dtos.DentResistanceDataDetailDto)">
+            <summary>
+            添加抗凹性能数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.FlangingClaspDataDetails.FlangingClaspDataDetailAppService">
+            <summary>
+            翻边扣合服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.FlangingClaspDataDetails.FlangingClaspDataDetailAppService.AddFlangingClaspDataDetail(HanGang.MaterialSystem.FlangingClaspDataDetails.Dtos.FlangingClaspDataDetailDto)">
+            <summary>
+            添加翻边扣合数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.FLDDataDetails.FLDDataDetailAppService">
+            <summary>
+            成形极限服务 
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.FLDDataDetails.FLDDataDetailAppService.AddfLDDataDetail(HanGang.MaterialSystem.FLDDataDetailDetails.Dtos.FLDDataDetailDto)">
+            <summary>
+            添加成形极限数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.FLDDataDetails.FLDDataDetailAppService.AddFLDDataDetailItem(HanGang.MaterialSystem.FLDDataDetailDetails.Dtos.FLDDataDetailItemDto)">
+            <summary>
+            添加成形极限项目
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.HydrogenInducedDelayedFractureDataDetails.HydrogenInducedDelayedFractureDataDetailAppService">
+             <summary>
+            氢致延迟开裂服务
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.HydrogenInducedDelayedFractureDataDetails.HydrogenInducedDelayedFractureDataDetailAppService.AddHydrogenInducedDelayedFractureDataDetail(HanGang.MaterialSystem.HydrogenInducedDelayedFractureDataDetails.Dtos.HydrogenInducedDelayedFractureDataDetailDto)">
+            <summary>
+            添加氢致延迟开裂数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.HydrogenInducedDelayedFractureDataDetails.HydrogenInducedDelayedFractureDataDetailAppService.AddHydrogenInducedDelayedFractureDataDetailItem(HanGang.MaterialSystem.HydrogenInducedDelayedFractureDataDetails.Dtos.HydrogenInducedDelayedFractureDataDetailItemDto)">
+            <summary>
+            添加氢致延迟开裂项目数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService">
+            <summary>
+            涂装性能服务 
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetail(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailDto)">
+            <summary>
+            添加涂装性能数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetailAdhesionItem(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailAdhesionItemDto)">
+            <summary>
+            添加涂装性能附着力数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetailDampHeatItem(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailDampHeatItemDto)">
+            <summary>
+            添加涂装性能-耐湿热性能试验数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetailElectrophoreticItem(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailElectrophoreticItemDto)">
+            <summary>
+            添加涂装性能-电泳漆膜厚度试验数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetailHardnessItem(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailHardnessItemDto)">
+            <summary>
+            添加涂装性能-电泳漆膜硬度试验数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetailHitResistanceItem(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailHitResistanceItemDto)">
+            <summary>
+            添加涂装性能-抗石击性能试验数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetailMembraneWeightItem(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailMembraneWeightItemDto)">
+            <summary>
+            添加涂装性能-膜重试验数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetailPhosphatingItem(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailPhosphatingItemDto)">
+            <summary>
+            添加涂装性能-磷化膜试验数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetailPRatioItem(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailPRatioItemDto)">
+            <summary>
+            添加涂装性能-P比试验数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.PaintingDataDetails.PaintingDataDetailAppService.AddPaintingDataDetailRoughnessItem(HanGang.MaterialSystem.PaintingDataDetails.Dtos.PaintingDataDetailRoughnessItemDto)">
+            <summary>
+            添加涂装性能-电泳漆膜粗糙度试验数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.ReboundDataDetails.ReboundDataDetailAppService">
+             <summary>
+            回弹性能服务     
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.ReboundDataDetails.ReboundDataDetailAppService.AddReboundDataDetail(HanGang.MaterialSystem.ReboundDataDetails.Dtos.ReboundDataDetailDto)">
+            <summary>
+            添加回弹性能数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.ReboundDataDetails.ReboundDataDetailAppService.AddReboundDataDetailItem(HanGang.MaterialSystem.ReboundDataDetails.Dtos.ReboundDataDetailItemDto)">
+             <summary>
+            添加回弹性能子表1数据
+             </summary>
+             <param name="input"></param>
+             <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.ReboundDataDetails.ReboundDataDetailAppService.AddReboundDataDetailItem2(HanGang.MaterialSystem.ReboundDataDetails.Dtos.ReboundDataDetailItem2Dto)">
+            <summary>
+            添加回弹性能子表2数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.ReboundDataDetails.ReboundDataDetailAppService.AddReboundDataDetailItem3(HanGang.MaterialSystem.ReboundDataDetails.Dtos.ReboundDataDetailItem3Dto)">
+            <summary>
+            添加回弹性能子表3数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.SecondaryWorkingEmbrittlementDataDetails.SecondaryWorkingEmbrittlementDataDetailAppService">
+            <summary>
+            二次加工服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.SecondaryWorkingEmbrittlementDataDetails.SecondaryWorkingEmbrittlementDataDetailAppService.AddSecondaryWorkingEmbrittlementDataDetail(HanGang.MaterialSystem.SecondaryWorkingEmbrittlementDataDetails.Dtos.SecondaryWorkingEmbrittlementDataDetailDto)">
+            <summary>
+            添加二次加工数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.SecondaryWorkingEmbrittlementDataDetails.SecondaryWorkingEmbrittlementDataDetailAppService.AddSecondaryWorkingEmbrittlementDataDetailItem(HanGang.MaterialSystem.SecondaryWorkingEmbrittlementDataDetails.Dtos.SecondaryWorkingEmbrittlementDataDetailItemDto)">
+            <summary>
+            添加二次加工项目数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.StaticTensionDataDetails.StaticTensionDataDetailAppService">
+            <summary>
+            静态拉伸服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.StaticTensionDataDetails.StaticTensionDataDetailAppService.AddstaticTensionDataDetail(HanGang.MaterialSystem.StaticTensionDataDetails.Dtos.StaticTensionDataDetailDto)">
+            <summary>
+            添加静态拉伸数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.StaticTensionDataDetails.StaticTensionDataDetailAppService.AddstaticTensionDataDetailRequirement(HanGang.MaterialSystem.StaticTensionDataDetails.Dtos.StaticTensionDataDetailRequirementDto)">
+            <summary>
+            添加静态拉伸数据Requirement
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.StaticTensionDataDetails.StaticTensionDataDetailAppService.AddStaticTensionDataDetailStressStrain(HanGang.MaterialSystem.StaticTensionDataDetails.Dtos.StaticTensionDataDetailStressStrainDto)">
+            <summary>
+            添加静态拉伸应力应变数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.SurfacePropertyDataDetails.SurfacePropertyDataDetailAppService">
+            <summary>
+            表面性能服务 
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.SurfacePropertyDataDetails.SurfacePropertyDataDetailAppService.AddSurfacePropertyDataDetail(HanGang.MaterialSystem.SurfacePropertyDataDetails.Dtos.SurfacePropertyDataDetailDto)">
+            <summary>
+            添加表面性能试验数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.SurfacePropertyDataDetails.SurfacePropertyDataDetailAppService.AddSurfacePropertyCoatingWeight(HanGang.MaterialSystem.SurfacePropertyDataDetails.Dtos.SurfacePropertyCoatingWeightDto)">
+            <summary>
+            添加表面性能镀层重量
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.SurfacePropertyDataDetails.SurfacePropertyDataDetailAppService.AddSurfacePropertyRoughness(HanGang.MaterialSystem.SurfacePropertyDataDetails.Dtos.SurfacePropertyRoughnessDto)">
+            <summary>
+            添加表面性能粗造度
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.SurfacePropertyDataDetails.SurfacePropertyDataDetailAppService.AddSSurfacePropertyRoughnessAndPeakDensity(HanGang.MaterialSystem.SurfacePropertyDataDetails.Dtos.SurfacePropertyRoughnessAndPeakDensityDto)">
+            <summary>
+            添加表面性能粗造度和峰值密度
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.SurfacePropertyDataDetails.SurfacePropertyDataDetailAppService.AddSurfacePropertySizeTolerance(HanGang.MaterialSystem.SurfacePropertyDataDetails.Dtos.SurfacePropertySizeToleranceDto)">
+            <summary>
+            添加表面性能尺寸公差
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TrialDataDetails.WeldingDataDetails.WeldingDataDetailAppService">
+            <summary>
+            焊接性能服务   
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TrialDataDetails.WeldingDataDetails.WeldingDataDetailAppService.AddWeldingDataDetail(HanGang.MaterialSystem.WeldingDataDetails.Dtos.WeldingDataDetailDto)">
+            <summary>
+            添加焊接性能数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.BendingDataDetails.BendingDataDetailAppService">
+             <summary>
+            弯曲服务
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.BendingDataDetails.BendingDataDetailAppService.AddBendingData(HanGang.MaterialSystem.BendingDataDetails.Dtos.BendingDataDetailDto)">
+            <summary>
+            添加弯曲数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.ChemicalElementDataDetails.ChemicalElementDataDetailAppService">
+             <summary>
+            化学成分服务
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.ChemicalElementDataDetails.ChemicalElementDataDetailAppService.AddChemicalElementData(HanGang.MaterialSystem.ChemicalElementDataDetails.Dtos.ChemicalElementDataDetailDto)">
+            <summary>
+            添加化学成分数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.CompressDataDetails.CompressDataDetailAppService">
+            <summary>
+            压缩服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.CompressDataDetails.CompressDataDetailAppService.AddCompressData(HanGang.MaterialSystem.CompressDataDetails.Dtos.CompressDataDetailDto)">
+            <summary>
+            添加压缩数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.HighCycleFatigueDataDetails.HighCycleFatigueDataDetailAppService">
+             <summary>
+            高周疲劳服务
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.HighCycleFatigueDataDetails.HighCycleFatigueDataDetailAppService.AddHighCycleFatigueData(HanGang.MaterialSystem.HighCycleFatigueDataDetails.Dtos.HighCycleFatigueDataDetailDto)">
+            <summary>
+            添加高周疲劳数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.HighCycleFatigueDataDetails.HighCycleFatigueDataDetailAppService.AddHighCycleFatigueDataDetailItem(HanGang.MaterialSystem.HighCycleFatigueDataDetails.Dtos.HighCycleFatigueDataDetailItemDto)">
+            <summary>
+            添加高周疲劳项目
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.HighSpeedStrechDataDetails.HighSpeedStrechDataDetailAppService">
+             <summary>
+            高速拉伸服务
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.HighSpeedStrechDataDetails.HighSpeedStrechDataDetailAppService.AddManufactory(HanGang.MaterialSystem.HighSpeedStrechDataDetails.Dtos.HighSpeedStrechDataDetailDto)">
+            <summary>
+            添加高速拉伸数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.HighSpeedStrechDataDetails.HighSpeedStrechDataDetailAppService.HighSpeedStrechDataDetailStressStrain(HanGang.MaterialSystem.HighSpeedStrechDataDetails.Dtos.HighSpeedStrechDataDetailStressStrainDto)">
+            <summary>
+            添加高速拉伸应力应变
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.HighSpeedStrechDataDetails.HighSpeedStrechDataDetailAppService.HighSpeedStrechDataDetailStressStrainExtend(HanGang.MaterialSystem.HighSpeedStrechDataDetails.Dtos.HighSpeedStrechDataDetailStressStrainExtendDto)">
+            <summary>
+            添加高速拉伸应力应变
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.LowCycleFatigueDetails.LowCycleFatigueDataDetailAppService">
+             <summary>
+            低周疲劳服务
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.LowCycleFatigueDetails.LowCycleFatigueDataDetailAppService.AddLowCycleFatigueData(HanGang.MaterialSystem.LowCycleFatigueDataDetails.Dtos.LowCycleFatigueDataDetailDto)">
+            <summary>
+            添加低周疲劳数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.LowCycleFatigueDetails.LowCycleFatigueDataDetailAppService.AddLowCycleFatigueDataDetailItem(HanGang.MaterialSystem.LowCycleFatigueDataDetails.Dtos.LowCycleFatigueDataDetailItemDto)">
+            <summary>
+            添加低周疲劳项目数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.MetallographicDataDetails.MetallographicDataDetailAppService">
+             <summary>
+            金相服务
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.MetallographicDataDetails.MetallographicDataDetailAppService.AddMetallographicData(HanGang.MaterialSystem.MetallographicDataDetails.Dtos.MetallographicDataDetailDto)">
+            <summary>
+            添加金相数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.PhysicalPerformanceDataDetails.PhysicalPerformanceDataDetailAppService">
+             <summary>
+            物理性能服务 
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.PhysicalPerformanceDataDetails.PhysicalPerformanceDataDetailAppService.AddPhysicalPerformanceData(HanGang.MaterialSystem.PhysicalPerformanceDataDetails.Dtos.PhysicalPerformanceDataDetailDto)">
+            <summary>
+            添加物理性能数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.PhysicalPerformanceDataDetails.PhysicalPerformanceDataDetailAppService.AddPhysicalPerformanceDataDetailThermalConductivity(HanGang.MaterialSystem.PhysicalPerformanceDataDetails.Dtos.PhysicalPerformanceDataDetailThermalConductivityDto)">
+            <summary>
+            添加物理性能导热系数数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.PhysicalPerformanceDataDetails.PhysicalPerformanceDataDetailAppService.AddPhysicalPerformanceDataDetailThermalExpansion(HanGang.MaterialSystem.PhysicalPerformanceDataDetails.Dtos.PhysicalPerformanceDataDetailThermalExpansionDto)">
+            <summary>
+            添加物理性能热膨胀数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.ProhibitedSubstanceDataDetails.ProhibitedSubstanceDataDetailAppService">
+             <summary>
+            禁用物质服务
+             </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.ProhibitedSubstanceDataDetails.ProhibitedSubstanceDataDetailAppService.AddProhibitedSubstanceData(HanGang.MaterialSystem.ProhibitedSubstanceDataDetails.Dtos.ProhibitedSubstanceDataDetailDto)">
+            <summary>
+            添加禁用物质数据
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HanGang.MaterialSystem.TypicalParts.TypicalPartAppService">
+            <summary>
+            零部件服务
+            </summary>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TypicalParts.TypicalPartAppService.GetTypicalParts(HanGang.MaterialSystem.TypicalParts.Dtos.GetTypicalPartListInputDto)">
+            <summary>
+            获取所有零部件
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TypicalParts.TypicalPartAppService.GetTypicalPartById(System.Guid)">
+            <summary>
+            根据零部件Id获取某个零部件信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.TypicalParts.TypicalPartAppService.Delete(System.Guid)">
+            <summary>
+            根据生产厂家Id删除某个零部件信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

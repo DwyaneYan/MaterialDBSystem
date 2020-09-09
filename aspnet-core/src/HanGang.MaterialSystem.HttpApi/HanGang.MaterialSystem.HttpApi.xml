@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HanGang.MaterialSystem.HttpApi</name>
+    </assembly>
+    <members>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialController.ApplicationCaseExportOne(System.Guid)">
+            <summary>
+            材料的应用案例自动导出
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialController.MaterialPicturePut(HanGang.MaterialSystem.TrialDataDetails.UploadDto)">
+            <summary>
+            材料根据id和上传图片更新上传图片
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialController.MaterialPictureDelete(HanGang.MaterialSystem.TrialDataDetails.UploadDto)">
+            <summary>
+            材料根据id和图片名删除图片
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialController.CommonFileStringDelete(System.String)">
+            <summary>
+            图片删除公共部分，根据图片名字删除,每次删除一个
+            </summary>
+            <param name="pictureName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialController.CommonFileStringUpload(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            图片上传公共部分，每次上传一个
+            </summary>
+            <param name="picture"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialController.CommonFileStringDocumentDelete(System.String)">
+            <summary>
+            文档删除公共部分，根据文档名字删除,每次删除一个
+            </summary>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialController.CommonFileStringDocumentUpload(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            文档上传公共部分，每次上传一个
+            </summary>
+            <param name="document"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialTrialController.GetStaticTensionDataDetailsNum(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            对比页面根据(list(guid) 材料id)查询静态拉伸数据
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialTrialController.LowCycleFatigueDataDetailItemsNum(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            对比页面根据(list(guid) 材料id)查询低周疲劳数据
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.MaterialTrialController.ChemicalElementDataDetailsNum(System.Collections.Generic.List{System.Guid})">
+            <summary>
+            对比页面根据(list(guid) 材料id)查询化学成分数据
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.OutputKfile(System.String)">
+            <summary>
+            导出材料卡片
+            </summary>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.CommonFileStringStreamDocument(System.String)">
+            <summary>
+            文档加载公共部分,返回的是文件流，根据文档名字加载
+            </summary>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.CommonFileStringStream(System.String)">
+            <summary>
+            图片加载公共部分,返回的是文件流，根据图片名字加载
+            </summary>
+            <param name="pictureName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.CommonFileStringStreamDocumentDownload(System.String)">
+            <summary>
+            文档下载公共部分根据文档名字
+            </summary>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.CommonFileStringStreamDownload(System.String)">
+            <summary>
+            图片下载公共部分根据图片名字 
+            </summary>
+            <param name="pictureName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.CommonFileStringDocumentDelete(System.String)">
+            <summary>
+            文档删除公共部分，根据文档名字删除,每次删除一个
+            </summary>
+            <param name="documentName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.CommonFileStringDocumentUpload(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            文档上传公共部分，每次上传一个
+            </summary>
+            <param name="document"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.CommonFileStringDelete(System.String)">
+            <summary>
+            图片删除公共部分，根据图片名字删除,每次删除一个
+            </summary>
+            <param name="pictureName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.CommonFileStringUpload(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            图片上传公共部分，每次上传一个
+            </summary>
+            <param name="picture"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.MaterialDocumentPut(HanGang.MaterialSystem.TrialDataDetails.UploadDto)">
+            <summary>
+             材料根据Id上传试验文档
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.MaterialDocumentDelete(HanGang.MaterialSystem.TrialDataDetails.UploadDto)">
+            <summary>
+             材料根据Id和文档名字（FileKey）删除试验文档
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.ApplicationCasePicturePut(HanGang.MaterialSystem.TrialDataDetails.UploadDto)">
+            <summary>
+             应用案例根据Id上传试验图片
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.ApplicationCasePictureDelete(HanGang.MaterialSystem.TrialDataDetails.UploadDto)">
+            <summary>
+             应用案例根据Id和图片名字（FileString）删除试验图片
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.ApplicationCaseDocumentPut(HanGang.MaterialSystem.TrialDataDetails.UploadDto)">
+            <summary>
+             应用案例根据Id上传试验pdf
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HanGang.MaterialSystem.Controllers.TrialDataDetailController.ApplicationCaseDocumentDelete(HanGang.MaterialSystem.TrialDataDetails.UploadDto)">
+            <summary>
+             应用案例根据Id和文档名字（FileKey）删除试验pdf
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

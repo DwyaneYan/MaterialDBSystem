@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>HanGang.MaterialSystem</RootNamespace>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>HanGang.MaterialSystem.HttpApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HanGang.MaterialSystem.Application.Contracts\HanGang.MaterialSystem.Application.Contracts.csproj" />
+    <ProjectReference Include="..\HanGang.MaterialSystem.Application\HanGang.MaterialSystem.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.HttpApi" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.IdentityModel" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="1.0.2" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="1.0.2" />
+  </ItemGroup>
+
+</Project>
